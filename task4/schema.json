@@ -1,0 +1,66 @@
+{
+    "name": "Image and Text Section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image",
+        "info": "Choose an image to display on the left side."
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Handcrafted and Responsibly Sourced"
+      },
+      {
+        "type": "textarea",
+        "id": "text_content",
+        "label": "Text Content",
+        "default": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain."
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "Learn More"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button Link",
+        "info": "Add a URL for the button link."
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "#f7e8e8"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_button",
+        "label": "Show Button",
+        "default": true
+      }
+    ],
+    "blocks": [
+      {
+        "type": "paragraph",
+        "name": "Additional Text",
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "additional_text",
+            "label": "Additional Text Content"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image and Text Section"
+      }
+    ]
+  }
+  

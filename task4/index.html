@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Who Wants to Be a Millionaire?</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="title">Who Wants to Be a Millionaire?</h1>
+    <div class="container">
+      <div class="lifelines-container">
+        <button id="lifeline-5050" class="btn lifeline">50:50</button>
+        <button id="lifeline-audience" class="btn lifeline">
+          Ask the Audience
+        </button>
+        <button id="lifeline-phone" class="btn lifeline">Phone a Friend</button>
+      </div>
+      <div id="question-container">
+        <h2 id="question"></h2>
+        <div id="options" class="options-grid"></div>
+      </div>
+      <button id="next-btn" class="btn centered-btn" disabled>
+        Next Question
+      </button>
+      <div class="container">
+        <div id="progress-container">
+          <div id="progress-bar"></div>
+        </div>
+
+        <!-- Existing game elements like questions go here -->
+      </div>
+      <!--button id="test-modal-btn">Test Winner Modal</button-->
+      <div id="feedback"></div>
+      <div class="dashboard" id="dashboard"></div>
+    </div>
+    <!-- Calling Friend Dialog -->
+    <div id="friend-dialog" class="modal">
+      <div class="modal-content">
+        <span class="close-friend">&times;</span>
+        <p id="friend-suggestion"></p>
+      </div>
+    </div>
+    <!-- Game Over Modal -->
+    <div id="game-over-modal" class="modal">
+      <div class="modal-content">
+        <p id="game-over-message" class="message"></p>
+        <button id="restart-game" class="btn centered-btn">Restart Game</button>
+      </div>
+    </div>
+    <!-- Winner Modal -->
+    <div id="winner-modal" class="modal">
+      <div class="modal-content">
+        <h2 class="message">Congratulations!</h2>
+        <p class="message">You've answered all 15 questions correctly!</p>
+        <p class="message">You're a Millionaire!</p>
+        <p class="message">
+          You're going home with <strong>$1,000,000</strong>!
+        </p>
+        <button id="restart-game" class="btn centered-btn">Restart Game</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

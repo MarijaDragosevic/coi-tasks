@@ -1,0 +1,43 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* For better responsiveness */
+@media (max-width: 1440px) {
+  swiper-section {
+      padding: 0 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  swiper-section {
+      padding: 0 10px;
+  }
+}/* Responsive styles */
+@media (max-width: 768px) {
+  .swiper {
+    height: 400px;
+  }
+
+  .swiper-slide img {
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .swiper {
+    height: 300px;
+  }
+}
